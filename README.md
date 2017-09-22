@@ -8,7 +8,7 @@ Edit confeditor-config.ini to tell what are the destination files to edit for ea
 ### Command Lines :
 
 ```
-php confeditor.php process_all [options]`
+php confeditor.php process_all [options]
 ```
 This command will execute every entries in the confeditor-config.ini file
 
@@ -22,10 +22,10 @@ keep_empty_lines | 1/0 | 0 | keep empty lines in target file
 sort | 1/0 | 0 | sort ini keys in each section
 debug | 1/0 | 0 | do not write in files but create a '-new' file instead
 separator | string | '=' | separator for key & values
-comment_regex | regex | '-^(;|#)-' | what defines a comment
+comment_regex | regex | '-^(;|\#)-' | what defines a comment
 
 ```
-php confeditor.php process sample-file target-file [options]`
+php confeditor.php process sample-file target-file [options]
 ```
 This command will merge the target-file with the lines inside the data/sample-file
 
@@ -38,7 +38,7 @@ option | equivalent | values | default
 -sort | sort | 1/0 | 0
 -d | debug | 1/0 | 0
 -sep | separator | string | '='
--cr | comment_regex | string | '-^(;|#)-'
+-cr | comment_regex | string | '-^(;|\#)-'
 
 
 
@@ -54,7 +54,7 @@ Edit filecopier-config.ini to configure which files and folder you want to copy,
 ### Command Lines :
 
 ```
-php filecopier.php process_all [options]`
+php filecopier.php process_all [options]
 ```
 This command will execute every entries in the filecopier-config.ini file
 
@@ -68,7 +68,7 @@ backup | 1/0 | 0 | create a backup of the file if exists, then copy the new file
 debug | 1/0 | 0 | write the copy  in a test/ folder
 
 ```
-php confeditor.php process filepath [options]`
+php confeditor.php process filepath [options]
 ```
 This command will copy the file located in data/filepath to filepath
 
