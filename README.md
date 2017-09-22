@@ -22,7 +22,7 @@ keep_empty_lines | 1/0 | 0 | keep empty lines in target file
 sort | 1/0 | 0 | sort ini keys in each section
 debug | 1/0 | 0 | do not write in files but create a '-new' file instead
 separator | string | '=' | separator for key & values
-comment_regex | regex | '-^(;|\#)-' | what defines a comment
+comment_regex | regex | '-^(;|\# )-' | what defines a comment
 
 ```
 php confeditor.php process sample-file target-file [options]
@@ -38,7 +38,7 @@ option | equivalent | values | default
 -sort | sort | 1/0 | 0
 -d | debug | 1/0 | 0
 -sep | separator | string | '='
--cr | comment_regex | string | '-^(;|\#)-'
+-cr | comment_regex | string | '-^(;|\# )-'
 
 
 
